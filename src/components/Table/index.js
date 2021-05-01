@@ -37,16 +37,7 @@ class DataTable extends Component {
     // Display Component View
     render() {
         console.log(this.state);
-        let tableThing;
-        if (this.state.employees[0]) tableThing = 
-        <tbody>
-        <img src={this.state.employees[0].pic} className="thumbnail" alt="thumbnail" />
-        <td>{this.state.employees[0].firstName}</td>
-        <td>{this.state.employees[0].lastName}</td>
-        <td>{this.state.employees[0].age}</td>
-        <td>{this.state.employees[0].phone}</td>
-        <td>{this.state.employees[0].email}</td>
-        </tbody>
+
         return (
             <body>
                 <h1></h1>
@@ -62,7 +53,16 @@ class DataTable extends Component {
                                 <th className="email">Email</th>
                             </tr>
                         </thead>
-                        {tableThing}
+                        <tbody>
+                        {this.state.employees.map(emp =>(<tr>
+                             <td><img src={emp.pic} className="thumbnail" alt="thumbnail" /></td>
+                             <td>{emp.firstName}</td>
+                             <td>{emp.lastName}</td>
+                             <td>{emp.age}</td>
+                             <td>{emp.phone}</td>
+                             <td>{emp.email}</td>
+                             </tr>))}
+                        </tbody>
                     </table>
                 </div>
             </body>

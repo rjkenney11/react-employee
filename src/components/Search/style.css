@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&display=swap" rel="stylesheet');
+
+
 form{
     background-color: #3d2f37;
     width: 45%;
@@ -9,4 +12,5 @@ form{
 .form-control{
     height: 4vh;
     width: 70%;
+    font-family: 'Inconsolata', monospace;
 }
