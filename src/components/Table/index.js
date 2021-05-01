@@ -49,17 +49,17 @@ class DataTable extends Component {
         </tbody>
         return (
             <body>
-                <h1>Data table</h1>
+                <h1></h1>
                 <div className="employee-list">
                     <table>
                         <thead>
                             <tr>
-                                <th>Profile Picture</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Age</th>
-                                <th>Phone #</th>
-                                <th>Email</th>
+                                <th className="pic">Profile Picture</th>
+                                <th className="fname">First Name</th>
+                                <th className="lname">Last Name</th>
+                                <th className="age">Age</th>
+                                <th className="phone">Phone #</th>
+                                <th className="email">Email</th>
                             </tr>
                         </thead>
                         {tableThing}

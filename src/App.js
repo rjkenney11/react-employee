@@ -2,6 +2,7 @@
 import './App.css';
 import Header from './components/Header';
 import DataTable from './components/Table/index.js';
+import Search from './components/Search';
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <Search />
       <DataTable 
           employees={employees}/>
     </div>

@@ -1,8 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&display=swap" rel="stylesheet');
+
 body{
     background: rgb(190, 190, 190);
+    font-family: 'Inconsolata', monospace;
 }
 
 .thumbnail{
+    margin-left: 3vw;
     height: 8vh;
     width: 4vw;
 }
+
+.pic{
+    width: 10%;
+}
+
+.fname{
+    padding-left: 2%;
+    width: 10%;
+}
+
+.lname{
+    padding-left: 0%;
+    width: 10%;
+}
+
+.age{
+    padding-left: 0%;
+    width: 10%;
+}
+
+.phone{
+    padding-left: 0%;
+    width: 10%;
+}
+
+.email{
+    padding-left: -2%;
+    width: 10%;
+}
+
+
+th{
+    padding-left: 2vw;
+    font-size: 1.2rem;
+}
+
+tbody{
+    margin: 0 auto;
+}
+
