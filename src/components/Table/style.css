@@ -5,6 +5,16 @@ body{
     font-family: 'Inconsolata', monospace;
 }
 
+.search{
+    font-family: 'Inconsolata', monospace;
+    border-color: #3d2f37;
+    border-style: solid;
+    border-width: 1rem;
+    width: 30%;
+    padding: 1rem;
+    margin-top: 2vh;
+}
+
 .thumbnail{
     margin-left: 3vw;
     height: 8vh;
