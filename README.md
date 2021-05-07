@@ -21,7 +21,7 @@ employers hoping to contact employees quickly and easily
 ![Image](https://user-images.githubusercontent.com/74163812/117163921-1c815300-ad92-11eb-9139-8716005a15e4.png)
 <br />
 <br />
-GitHib Link: https://github.com/rjkenney11/react-employee <br /><br />
+Dployed Heroku Link: https://vast-beach-79069.herokuapp.com/ <br /><br />
 
 ### Contributing:
 Rachel Kenney<br />
