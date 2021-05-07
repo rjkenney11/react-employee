@@ -6,7 +6,9 @@ import './style.css';
 class DataTable extends Component {
     // Logic 
     state = {
-        employees: []
+        employees: [],
+        filteredEmployees: [],
+        search: ""
     }
 
     componentDidMount() {
@@ -26,6 +28,7 @@ class DataTable extends Component {
                 });
                 // Once we have the data --> Update our STATE 
                 this.setState({ employees: mapEmployees });
+                this.setState({ ...this.state, filteredEmployees: this.state.employees})
             })
             .catch(err => {
                 console.log(err);
@@ -54,7 +57,7 @@ class DataTable extends Component {
                             </tr>
                         </thead>
                         <tbody>
-                        {this.state.employees.map(emp =>(<tr>
+                        {this.state.filteredEmployees.map(emp =>(<tr>
                              <td><img src={emp.pic} className="thumbnail" alt="thumbnail" /></td>
                              <td>{emp.firstName}</td>
                              <td>{emp.lastName}</td>
